@@ -25,8 +25,11 @@ int main(int argc, char** argv){
 
         Vector2 celSize = {celSizeW, celSizeH};
         Vector2 pos = {posY, posX};
+        
+        Rectangle rec = {posX, posY,
+                         celSizeW, celSizeH};
 
-        DrawRectangleV(pos, celSize, RAYWHITE);
+        DrawRectangleRec(rec, RAYWHITE);
       }
     EndDrawing();
   
